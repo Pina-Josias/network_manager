@@ -1,6 +1,6 @@
-import 'package:data_connection_checker/data_connection_checker.dart';
+import 'package:internet_connection_checker/internet_connection_checker.dart';
 
-import '../domain/inetwork_manager.dart';
+import 'package:network_manager/src/domain/inetwork_manager.dart';
 
 ///Implementation of NetworkManager
 class NetworkManager implements INetworkManager {
@@ -8,7 +8,7 @@ class NetworkManager implements INetworkManager {
   NetworkManager(this.connectionChecker);
 
   /// Access to connectionChecker properties
-  final DataConnectionChecker connectionChecker;
+  final InternetConnectionChecker connectionChecker;
 
   @override
   Future<bool> get isConnected => connectionChecker.hasConnection;

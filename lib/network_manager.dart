@@ -4,8 +4,8 @@
 library network_manager;
 
 // Here you export any libraries intended for clients of this package.
-export 'package:data_connection_checker/data_connection_checker.dart'
-    show DataConnectionChecker;
+export 'package:internet_connection_checker/internet_connection_checker.dart'
+    show InternetConnectionChecker;
 
 export 'src/data/network_manager.dart';
 export 'src/domain/inetwork_manager.dart';

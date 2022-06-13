@@ -1,9 +1,9 @@
 import 'package:mocktail/mocktail.dart';
+import 'package:network_manager/network_manager.dart';
 import 'package:test/test.dart';
 
-import 'package:network_manager/network_manager.dart';
-
-class MockDataConnectionChecker extends Mock implements DataConnectionChecker {}
+class MockDataConnectionChecker extends Mock
+    implements InternetConnectionChecker {}
 
 void main() {
   late NetworkManager networkInfo;
